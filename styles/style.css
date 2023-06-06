@@ -13,3 +13,9 @@ body{
 p{
     font-family: 'PT Sans', sans-serif;
 }
+
+iframe{
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+}
