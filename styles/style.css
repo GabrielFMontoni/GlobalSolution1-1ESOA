@@ -19,3 +19,7 @@ iframe{
     height: auto;
     aspect-ratio: 16/9;
 }
+ul {
+    text-align:left;
+    font-family: 'PT Sans', sans-serif;
+  }
