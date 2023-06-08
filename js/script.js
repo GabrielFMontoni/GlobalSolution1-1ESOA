@@ -1,6 +1,6 @@
 const el = document.querySelector("#title");
-const text = "Aqui estará o título";
-const interval = 150;
+const text = "Insegurança alimentar global";
+const interval = 100;
 
 function showText(el, text, interval) {
     const char = text.split("").reverse();
@@ -18,13 +18,53 @@ function showText(el, text, interval) {
     }, interval);
 }
 
+showText(el, text, interval);
 
 const botao = document.querySelector("#bnt");
 
+function showFutureText() {
+    var futureText = document.getElementById("futureText");
+    if (futureText.style.display === "none") {
+        futureText.style.display = "block";
+    } else {
+        futureText.style.display = "none";
+    }
+}
 const caixa = document.querySelector("#caixa");
 
+var video = document.querySelector("iframe");
+var enlargeButton = document.querySelector(".btn-success");
+enlargeButton.addEventListener("click", function () {
+    if (video.style.display === "none") {
+        video.style.display = "block";
+    } else {
+        video.style.display = "none";
+    }
+    video.style.width = "100%";
+    video.style.height = "600px";
+});
 
+let mybutton = document.getElementById("myBtn");
 
+window.onscroll = function () {
+    scrollFunction();
+};
+
+function scrollFunction() {
+    if (
+        document.body.scrollTop > 20 ||
+        document.documentElement.scrollTop > 20
+    ) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+}
+
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
 botao.addEventListener("click", exibeCuriosidade);
 
 function exibeCuriosidade() {
