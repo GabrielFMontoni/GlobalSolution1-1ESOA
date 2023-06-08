@@ -1,25 +1,128 @@
-@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=PT+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Hind+Siliguri:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=PT+Sans:wght@400;700&display=swap');
 
-*{
-    font-family: 'Montserrat', sans-serif;
+* {
+    font-family: "Montserrat", sans-serif;
 }
 
-body{
+body {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1057%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(231%2c 255%2c 241%2c 1)'%3e%3c/rect%3e%3cpath d='M 0%2c177 C 28.8%2c167 86.4%2c118 144%2c127 C 201.6%2c136 230.4%2c243.4 288%2c222 C 345.6%2c200.6 374.4%2c23 432%2c20 C 489.6%2c17 518.4%2c184 576%2c207 C 633.6%2c230 662.4%2c128.8 720%2c135 C 777.6%2c141.2 806.4%2c262.8 864%2c238 C 921.6%2c213.2 950.4%2c23.4 1008%2c11 C 1065.6%2c-1.4 1094.4%2c163.8 1152%2c176 C 1209.6%2c188.2 1238.4%2c69.8 1296%2c72 C 1353.6%2c74.2 1411.2%2c164 1440%2c187L1440 560L0 560z' fill='rgba(125%2c 255%2c 169%2c 0.4)'%3e%3c/path%3e%3cpath d='M 0%2c392 C 22.2%2c411.8 66.6%2c504.2 111%2c491 C 155.4%2c477.8 177.6%2c334.8 222%2c326 C 266.4%2c317.2 288.6%2c429.8 333%2c447 C 377.4%2c464.2 399.6%2c405.4 444%2c412 C 488.4%2c418.6 510.6%2c484.8 555%2c480 C 599.4%2c475.2 621.6%2c374 666%2c388 C 710.4%2c402 732.6%2c566.2 777%2c550 C 821.4%2c533.8 843.6%2c332.4 888%2c307 C 932.4%2c281.6 954.6%2c401.6 999%2c423 C 1043.4%2c444.4 1065.6%2c411.8 1110%2c414 C 1154.4%2c416.2 1176.6%2c437.8 1221%2c434 C 1265.4%2c430.2 1288.2%2c395.2 1332%2c395 C 1375.8%2c394.8 1418.4%2c425.4 1440%2c433L1440 560L0 560z' fill='rgba(91%2c 255%2c 157%2c 0.3)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1057'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-p{
-    font-family: 'PT Sans', sans-serif;
+p {
+    font-family: "PT Sans", sans-serif;
 }
 
-iframe{
+iframe {
     max-width: 100%;
     height: auto;
     aspect-ratio: 16/9;
 }
 ul {
-    text-align:left;
-    font-family: 'PT Sans', sans-serif;
-  }
+    text-align: left;
+    font-family: "PT Sans", sans-serif;
+}
+
+a {
+    cursor: pointer;
+}
+
+p {
+    padding-bottom: 1rem;
+}
+
+h5 {
+    font-weight: bold;
+    color: #2b2b2b;
+}
+
+.box-shadow {
+    -webkit-box-shadow: 0 1px 1px rgba(72, 78, 85, 0.6);
+    box-shadow: 0 1px 1px rgba(72, 78, 85, 0.6);
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+.box-shadow:hover {
+    -webkit-box-shadow: 0 20px 40px rgba(72, 78, 85, 0.6);
+    box-shadow: 0 20px 40px rgba(72, 78, 85, 0.6);
+    -webkit-transform: translateY(-15px);
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -o-transform: translateY(-15px);
+    transform: translateY(-15px);
+}
+
+.card {
+    border-radius: 25px;
+}
+
+.card img {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.card svg {
+    position: absolute;
+    top: 19rem;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    filter: drop-shadow(2px -9px 4px rgba(0, 69, 134, 0.2));
+}
+.card:hover svg {
+    filter: drop-shadow(2px -9px 4px rgba(0, 69, 134, 0.4));
+}
+
+i {
+    position: absolute;
+    top: 18rem;
+    right: 2rem;
+    color: white;
+    font-size: 3rem;
+    background: rgb(238, 174, 202);
+    background: linear-gradient(
+        133deg,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(211, 210, 231, 1) 19%,
+        rgba(11, 39, 73, 1) 100%
+    );
+    padding: 1rem;
+    border-radius: 100%;
+    transition: all 0.6s ease-in-out;
+}
+
+.card:hover i {
+    transform: rotate(-180deg);
+}
+
+i:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+        rgba(0, 0, 0, 0.7) 0px 18px 36px -18px inset;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99; 
+  border: none; 
+  outline: none;
+  background-color: black; 
+  color: white;
+  cursor: pointer; 
+  padding: 15px; 
+  border-radius: 10px; 
+  font-size: 18px; 
+}
+
+#myBtn:hover {
+  background-color: #555; 
+}
